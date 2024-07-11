@@ -1,60 +1,41 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="nl">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Niels">
-    <link rel="icon" href="/assets/img/favicons/favicon.ico">
-
-    <title>Feedbackformulier Fort de Kwakel</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="dist/css/feedback.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact Form</title>
+    <!-- Form styling -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Feedbackformulier Fort</a>
-    </nav>
-
-    <form class="form-control" action="https://submit-form.com/mBQzag264">
-
-      <div class="form-group">
+    <div class="formcarry-container">
+      <h1>Feedbackformulier Fort</h1>
+      <form action="https://submit-form.com/mBQzag264" class="formcarry-form">
         <label for="name">Naam</label>
-        <input type="text" class="form-control" name="name" required autofocus>
-      </div>
+        <input type="text" name="name" required autofocus />
 
-      <div class="form-group">
         <label for="date">Datum</label>
-        <input type="date"  class="form-control" name="date" required  >
-      </div>
+        <input type="date" name="date" required />
 
-      <div class="form-group">
-        <label for="time">Starttijd groep</label>
-        <input type="time" class="form-control" name="time" required>
-      </div>
+        <label for="time">Tijd</label>
+        <input type="time" name="time" required />
 
-      <div class="form-group">
         <label for="goed_aangetroffen">Trof je alles goed aan?</label>
-        <textarea class="form-control" name="goed_aangetroffen" rows="2"></textarea>
-      </div>
+        <input type="text" rows="2" name="goed_aangetroffen" />
 
-      <div class="form-group">
         <label for="repair_needed">Is er iets kapot gegaan?</label>
-        <textarea class="form-control" name="repair_needed" rows="2"></textarea>
-      </div>
+        <input type="text" rows="2" name="repair_needed" />
 
-      <div class="form-group">
-        <label for="feedback_group_and_other">Vond je groep het leuk? En eventuele bijzonderheden</label>
-        <textarea class="form-control" name="feedback_group_and_other" rows="2"></textarea>
-      </div>
-      <input type="hidden" name="_email.subject" value="Feedbackformulier Fort" />
-      <input type="hidden" name="_redirect" value="https://escapelabnl.github.io/thanks.html"/>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Verstuur</button>
-    </form>
+        <label for="feedback_group_and_other">Vond je groep het leuk? Zijn er eventuele bijzonderheden?</label>
+        <input type="text" rows="2" name="feedback_group_and_other" />
+
+        <input type="hidden" name="_email.subject" value="Feedbackformulier Fort" />
+        <input type="hidden" name="_redirect" value="https://escapelabnl.github.io/thanks.html"/>        
+
+        <button type="submit">Send</button>
+
+      </form>
+    </div>
   </body>
 </html>
