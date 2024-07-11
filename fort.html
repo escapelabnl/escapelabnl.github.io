@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Niels">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="icon" href="/assets/img/favicons/favicon.ico">
 
     <title>Feedbackformulier Fort de Kwakel</title>
 
@@ -13,11 +13,12 @@
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="dist/css/floating-labels.css" rel="stylesheet">
+    <link href="dist/css/signin.css" rel="stylesheet">
   </head>
 
   <body>
-    <form class="form" action="https://submit-form.com/mBQzag264">
+    <main role="main" class="container">
+    <form class="form-group" action="https://submit-form.com/mBQzag264">
       <div class="text-center mb-4">
 
         <h1 class="h3 mb-3 font-weight-normal">Feedbackformulier Fort</h1>
@@ -35,7 +36,7 @@
       </div>
 
       <div class="form-group">
-        <label for="time">Tijd</label>
+        <label for="time">Starttijd groep</label>
         <input type="time" class="form-control" name="time" >
       </div>
 
@@ -54,8 +55,10 @@
         <textarea class="form-control" name="feedback_group_and_other" rows="2"></textarea>
       </div>
       <input type="hidden" name="_email.subject" value="Feedbackformulier Fort" />
-      <input type="hidden" name="_email.template.title" value="Feedbackformulier Fort" />
+      <input type="hidden" name="_redirect" value="https://your-website.com/thanks"
+  />
       <button class="btn btn-lg btn-primary btn-block" type="submit">Verstuur</button>
     </form>
+    </main><!-- /.container -->
   </body>
 </html>
